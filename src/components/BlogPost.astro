@@ -3,13 +3,14 @@ import Author from './Author.astro';
 
 export interface Props {
 	title: string;
-	author: string;
+	artist: string;
 	publishDate: string;
+	heard: string[];
 	heroImage: string;
 	alt: string;
 }
 
-const { title, author, publishDate, heroImage, alt } = Astro.props;
+const { title, artist, publishDate, heard, heroImage, alt } = Astro.props;
 ---
 
 <div class="layout">
@@ -19,7 +20,12 @@ const { title, author, publishDate, heroImage, alt } = Astro.props;
 				{heroImage && <img width="720" height="420" class="hero-image" loading="lazy" src={heroImage} alt={alt} />}
 				<p class="publish-date">{publishDate}</p>
 				<h1 class="title">{title}</h1>
-				<Author name="@FredKSchott" href="https://twitter.com/FredKSchott" />
+				<Author name={artist} href="https://twitter.com/FredKSchott" />
+				{
+					heard.map((medium) => {
+						return <li>{medium}</li>
+					})
+				}
 			</header>
 			<main>
 				<slot />
