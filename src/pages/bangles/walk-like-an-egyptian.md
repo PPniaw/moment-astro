@@ -1,7 +1,7 @@
 ---
 setup: |
   import Layout from '../../layouts/BlogPost.astro'
-title: 'Walk Like an Egyptian'
+name: 'Walk Like an Egyptian'
 year: '1986'
 artist: 'the Bangles'
 permalink: '/bangles/walk-like-an-egyptian'

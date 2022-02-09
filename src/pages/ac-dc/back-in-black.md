@@ -1,7 +1,7 @@
 ---
 setup: |
   import Layout from '../../layouts/BlogPost.astro'
-title: 'Back in Black'
+name: 'Back in Black'
 year: '1980'
 artist: 'AC/DC'
 permalink: '/ac-dc/back-in-black'

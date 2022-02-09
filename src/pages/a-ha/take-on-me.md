@@ -1,7 +1,7 @@
 ---
 setup: |
   import Layout from '../../layouts/BlogPost.astro'
-title: 'Take on Me'
+name: 'Take on Me'
 year: '1985'
 artist: 'A-Ha'
 permalink: '/a-ha/take-on-me'
