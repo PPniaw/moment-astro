@@ -9,33 +9,27 @@ export interface Props {
 const { title, description, permalink } = Astro.props;
 ---
 
-<!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-
-<!-- Primary Meta Tags -->
 <title>{title}</title>
 <meta name="description" content={description} />
-
-<!-- Open Graph / Facebook -->
+<link rel="canonical" href={import.meta.env.PUBLIC_HOSTNAME + permalink} />
+<link rel="icon" sizes="any" href="/favicon.ico" />
+<link rel="icon" type="image/svg+xml" href="/logo/initial.svg" />
+<link rel="apple-touch-icon" href="/logo/large.png">
+<link rel="manifest" href="/manifest.webmanifest">
 <meta property="og:type" content="website" />
 <meta property="og:url" content={import.meta.env.PUBLIC_HOSTNAME + permalink} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image" content="https://astro.build/social.jpg?v=1" />
-
-<!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image" />
 <meta property="twitter:url" content={import.meta.env.PUBLIC_HOSTNAME + permalink} />
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content="https://astro.build/social.jpg?v=1" />
-
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.gstatic.com" />
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 <style global>
 	@import "../styles/global.css";
