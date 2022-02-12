@@ -7,12 +7,12 @@ const { content } = Astro.props;
 const { name, year, publishDate, heard, artist, heroImage, permalink, alt } = content;
 
 const title = `聽到 ${name} (${artist}) 的電視影劇`
-const description = `也有歌詞。${year} 發行，出現在${heard.join('、')}。`
+const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，出現在${heard.join('、')}。`
 ---
 
-<html lang={content.lang || 'en'}>
+<html lang="zh-Hant-TW">
 	<head>
-		<BaseHead {title} {description} {artist} {permalink} />
+		<BaseHead {title} {description} {permalink} />
 	</head>
 
 	<body>

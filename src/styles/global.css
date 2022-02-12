@@ -10,12 +10,12 @@
 
 	--color-dawn: 16, 68%, 68%;
 
-	--color-midnight100: 255, 26%, 16%;
-	--color-midnight300: 255, 26%, 32%;
-	--color-midnight600: 255, 26%, 45%;
-	--color-midnight700: 255, 26%, 56%;
-	--color-midnight1100: 255, 26%, 80%;
-	--color-midnight1600: 255, 26%, 92%;
+	--color-midnight100: 225, 26%, 16%;
+	--color-midnight300: 225, 26%, 32%;
+	--color-midnight600: 225, 26%, 45%;
+	--color-midnight700: 225, 26%, 56%;
+	--color-midnight1100: 225, 26%, 80%;
+	--color-midnight1600: 225, 26%, 92%;
 }
 
 html {
@@ -25,10 +25,10 @@ html {
 body {
 	display: grid;
 	grid: auto 1fr auto / minmax(10px, 1168px);
+	row-gap: 32px;
 	justify-items: stretch;
 	justify-content: center;
 	min-height: 100vh;
-	background: hsl(var(--color-shade100));
 }
 
 ::selection {

@@ -2,7 +2,7 @@
 // Component Imports
 import BaseHead from '../components/BaseHead.astro';
 import SiteNameHeader from '../components/SiteNameHeader.astro';
-import BlogPostPreview from '../components/BlogPostPreview.astro';
+import SongPreview from '../components/SongPreview.astro';
 import Footer from '../components/Footer.astro';
 
 interface MarkdownFrontmatter {
@@ -19,56 +19,39 @@ let permalink = '';
 
 // Data Fetching: List all Markdown posts in the repo.
 
-let allPosts = await Astro.fetchContent('./*/*.md');
-allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/core-concepts/astro-components/
+let allSongs = await Astro.fetchContent('./*/*.md');
+allSongs = allSongs.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
 ---
 
 <html lang="zh-Hant-TW">
 	<head>
 		<BaseHead {title} {description} {permalink} />
 		<style>
-			header {
-				width: 100%;
-				height: 100%;
-				background-color: var(--theme-bg-offset);
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-
-			.content {
-				margin-top: 4rem;
-				margin-bottom: 8rem;
-			}
-
-			.content :global(main > * + *) {
-				margin-top: 1rem;
-			}
-
-			.intro {
-				padding-bottom: 4rem;
-				margin-bottom: 2rem;
-				border-bottom: 4px solid var(--theme-divider);
-			}
-
-			.intro > * {
-				margin: 0;
-			}
-
-			.latest {
-				font-size: 2.5rem;
-				font-weight: 700;
+			body {
+				background: hsl(var(--color-shade100));
 			}
 		</style>
 	</head>
 	<body>
 		<SiteNameHeader />
-		<main class="content">
-			{allPosts.map((p) => <BlogPostPreview post={p} />)}
+		<main class="songs">
+			<ul class="songsList">
+				{allSongs.map((song) => <SongPreview song={song} />)}
+			</ul>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style lang="scss">
+	.songs {
+		padding: 0 16px;
+	}
+
+	.songsList {
+		display: grid;
+		row-gap: 32px;
+		margin: 0;
+		padding: 0;
+	}
+</style>
