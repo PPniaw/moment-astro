@@ -1,7 +1,8 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
-import SiteNameHeader from '../components/SiteNameHeader.astro';
+import SitePathHeader from '../components/SitePathHeader.astro';
 import BlogPost from '../components/BlogPost.astro';
+import Footer from '../components/Footer.astro';
 
 const { content } = Astro.props;
 const { name, year, publishDate, heard, artist, heroImage, permalink, alt } = content;
@@ -16,11 +17,18 @@ const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，�
 	</head>
 
 	<body>
-		<SiteNameHeader />
+		<SitePathHeader {artist} />
 		<div class="wrapper">
 			<BlogPost {title} {artist} {heroImage} {publishDate} {heard} {alt}>
 				<slot />
 			</BlogPost>
 		</div>
+		<Footer />
 	</body>
 </html>
+
+<style lang="scss">
+	body {
+		background: hsl(var(--color-shade100));
+	}
+</style>

@@ -1,36 +1,74 @@
 ---
-import MomentLogo from '../../public/logo/monochrome.svg';
+// import MomentLogo from '../../public/logo/monochrome.svg';
+export interface Props {
+	artist: string;
+}
+
+const { artist } = Astro.props;
 ---
 
-<header class="siteName">
-	<img class="logo" src={MomentLogo} alt="The Moment" />
+<header>
+	<nav>
+		<ul class="sitePathList">
+			<li class="sitePathItem">
+				<a class="link" href="/">
+					<img class="logo" src="/logo/monochrome.svg" alt="The Moment" />
+					Moment
+				</a>
+			</li>
+			<li class="sitePathItem">
+				<img class="pathIndicator" src="/chevronRight.svg" alt="下一項是：" />
+			</li>
+			<li class="sitePathItem pathTail">
+				🤘 {artist}
+			</li>
+		</ul>
+	</nav>
 </header>
 
 <style lang="scss">
-.siteName {
+.sitePathList {
 	display: grid;
-	grid: auto / 48px 1fr;
+	grid: auto / max-content 8px 1fr;
 	column-gap: 12px;
 	align-items: center;
-	padding: 16px 16px 0;
+	margin: 0;
+	padding: 0 16px;
 
-	@media screen and (min-width: 768px) {
+	/* @media screen and (min-width: 768px) {
 		grid: auto /
 					auto;
 		row-gap: 12px;
-	}
+	} */
+}
+
+.sitePathItem {
+	list-style: none;
+}
+
+.link {
+	display: block;
+	padding: 14px 0;
+	color: hsl(var(--color-shade1000));
+	font-size: 1.4rem;
+	line-height: 20px;
+	text-decoration: none;
 }
 
 .logo {
-	width: 48px;
+	width: 20px;
 	aspect-ratio: 1;
-	fill: currentColor;
+	vertical-align: text-bottom;
 }
 
-.fullname {
-	margin: 0;
-	color: hsl(var(--color-midnight1100));
-	font-size: clamp(1.6rem, 1.8vw, 2rem);
-	font-weight: 400;
+.pathIndicator {
+	vertical-align: text-bottom;
 }
+
+.pathTail {
+	color: hsl(var(--color-shade1000));
+	font-size: 1.4rem;
+	line-height: 20px;
+}
+
 </style>

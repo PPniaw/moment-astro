@@ -26,11 +26,6 @@ allSongs = allSongs.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 <html lang="zh-Hant-TW">
 	<head>
 		<BaseHead {title} {description} {permalink} />
-		<style>
-			body {
-				background: hsl(var(--color-shade100));
-			}
-		</style>
 	</head>
 	<body>
 		<SiteNameHeader />
@@ -44,6 +39,10 @@ allSongs = allSongs.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 </html>
 
 <style lang="scss">
+	body {
+		background: hsl(var(--color-shade100));
+	}
+
 	.songs {
 		padding: 0 16px;
 	}
