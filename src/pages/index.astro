@@ -1,7 +1,7 @@
 ---
 // Component Imports
 import BaseHead from '../components/BaseHead.astro';
-import SitePathHeader from '../components/SitePathHeader.astro';
+import SiteNameHeader from '../components/SiteNameHeader.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
 import Footer from '../components/Footer.astro';
 
@@ -65,7 +65,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 		</style>
 	</head>
 	<body>
-		<SitePathHeader />
+		<SiteNameHeader />
 		<main class="content">
 			{allPosts.map((p) => <BlogPostPreview post={p} />)}
 		</main>
