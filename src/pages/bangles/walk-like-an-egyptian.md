@@ -3,7 +3,7 @@ setup: |
   import Layout from '../../layouts/BlogPost.astro'
 name: 'Walk Like an Egyptian'
 year: '1986'
-artist: 'the Bangles'
+artist: 'The Bangles'
 permalink: '/bangles/walk-like-an-egyptian'
 heard:
 - '📺 黑鏡：San Junipero (2016)'

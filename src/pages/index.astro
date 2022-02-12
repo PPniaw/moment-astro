@@ -6,7 +6,7 @@ import SongPreview from '../components/SongPreview.astro';
 import Footer from '../components/Footer.astro';
 
 interface MarkdownFrontmatter {
-	publishDate: number;
+  publishDate: number;
 }
 
 // Component Script:
@@ -24,33 +24,37 @@ allSongs = allSongs.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 ---
 
 <html lang="zh-Hant-TW">
-	<head>
-		<BaseHead {title} {description} {permalink} />
-	</head>
-	<body>
-		<SiteNameHeader />
-		<main class="songs">
-			<ul class="songsList">
-				{allSongs.map((song) => <SongPreview song={song} />)}
-			</ul>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead {title} {description} {permalink} />
+  </head>
+  <body>
+    <SiteNameHeader />
+    <main class="songs">
+      <ul class="songsList">
+        {allSongs.map((song) => <SongPreview song={song} />)}
+      </ul>
+    </main>
+    <Footer />
+  </body>
 </html>
 
 <style lang="scss">
-	body {
-		background: hsl(var(--color-shade100));
-	}
+  body {
+    background: hsl(var(--color-shade100));
+  }
 
-	.songs {
-		padding: 0 16px;
-	}
+  .songs {
+    padding: 0 16px;
 
-	.songsList {
-		display: grid;
-		row-gap: 32px;
-		margin: 0;
-		padding: 0;
-	}
+    @media screen and (min-width: 1200px) {
+      padding: 0;
+    }
+  }
+
+  .songsList {
+    display: grid;
+    row-gap: 32px;
+    margin: 0;
+    padding: 0;
+  }
 </style>

@@ -1,74 +1,72 @@
 ---
 // import MomentLogo from '../../public/logo/monochrome.svg';
 export interface Props {
-	artist: string;
+  artist: string;
 }
 
 const { artist } = Astro.props;
 ---
 
 <header>
-	<nav>
-		<ul class="sitePathList">
-			<li class="sitePathItem">
-				<a class="link" href="/">
-					<img class="logo" src="/logo/monochrome.svg" alt="The Moment" />
-					Moment
-				</a>
-			</li>
-			<li class="sitePathItem">
-				<img class="pathIndicator" src="/chevronRight.svg" alt="下一項是：" />
-			</li>
-			<li class="sitePathItem pathTail">
-				🤘 {artist}
-			</li>
-		</ul>
-	</nav>
+  <nav>
+    <ul class="sitePathList">
+      <li class="sitePathItem">
+        <a class="link" href="/">
+          <img class="logo" src="/logo/monochrome.svg" alt="The Moment" />
+          Moment
+        </a>
+      </li>
+      <li class="sitePathItem">
+        <img class="pathIndicator" src="/chevronRight.svg" alt="下一項是：" />
+      </li>
+      <li class="sitePathItem pathTail">
+        🤘 {artist}
+      </li>
+    </ul>
+  </nav>
 </header>
 
 <style lang="scss">
 .sitePathList {
-	display: grid;
-	grid: auto / max-content 8px 1fr;
-	column-gap: 12px;
-	align-items: center;
-	margin: 0;
-	padding: 0 16px;
+  display: grid;
+  grid: auto / max-content 8px 1fr;
+  column-gap: 12px;
+  align-items: center;
+  margin: 0;
+  padding: 0 16px;
 
-	/* @media screen and (min-width: 768px) {
-		grid: auto /
-					auto;
-		row-gap: 12px;
-	} */
+  @media screen and (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .sitePathItem {
-	list-style: none;
+  list-style: none;
 }
 
 .link {
-	display: block;
-	padding: 14px 0;
-	color: hsl(var(--color-shade1000));
-	font-size: 1.4rem;
-	line-height: 20px;
-	text-decoration: none;
+  display: block;
+  padding: 14px 0;
+  color: hsl(var(--color-shade1000));
+  font-size: 1.4rem;
+  line-height: 20px;
+  text-decoration: none;
 }
 
 .logo {
-	width: 20px;
-	aspect-ratio: 1;
-	vertical-align: text-bottom;
+  width: 20px;
+  aspect-ratio: 1;
+  vertical-align: text-bottom;
 }
 
 .pathIndicator {
-	vertical-align: text-bottom;
+  vertical-align: text-bottom;
 }
 
 .pathTail {
-	color: hsl(var(--color-shade1000));
-	font-size: 1.4rem;
-	line-height: 20px;
+  color: hsl(var(--color-shade1000));
+  font-size: 1.4rem;
+  line-height: 20px;
 }
 
 </style>
