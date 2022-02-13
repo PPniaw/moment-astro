@@ -54,7 +54,8 @@ allSongs = allSongs.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 
   .songsList {
     display: grid;
-    row-gap: 32px;
+    grid: auto / repeat(auto-fill, minmax(360px, 1fr));
+    gap: 32px;
     margin: 0;
     padding: 0;
   }

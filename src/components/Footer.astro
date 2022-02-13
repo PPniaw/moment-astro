@@ -7,7 +7,7 @@ const year = new Date().getFullYear();
     <img class="logo" src="/logo/monochrome.svg" alt="Moment Logo" />
     <span>Moment 是練習作品</span>
   </strong>
-  <p class="statement origin">此網站上所有歌詞與電影、影劇的智慧財產權皆屬於原創作者。</p>
+  <p class="statement origin">此網站上收錄的歌詞、電影與影劇的智慧財產權皆屬於原作者。</p>
   <figure class="statement fromTw">
     <img class="mapTaiwan" src="/taiwan.png" alt="台灣圖示" loading="lazy">
     <figcaption class="mit">
@@ -18,8 +18,12 @@ const year = new Date().getFullYear();
 
 <style lang="scss">
   footer {
-    padding: 0 16px env(safe-area-inset-bottom, 2rem);
+    padding: 0 16px calc(3rem + env(safe-area-inset-bottom));
     font-family: var(--font-body);
+
+    @media screen and (min-width: 1200px) {
+      padding: 0 0 calc(3rem + env(safe-area-inset-bottom));
+    }
   }
 
   .logo {
