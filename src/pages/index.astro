@@ -39,25 +39,32 @@ allSongs = allSongs.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 </html>
 
 <style lang="scss">
-  body {
-    background: hsl(var(--color-shade100));
-  }
+body {
+  display: grid;
+  grid: "sitename" auto
+        "songs" 1fr
+        "footer" auto / minmax(10px, 1168px);
+  justify-items: stretch;
+  justify-content: center;
+  background: hsl(var(--color-shade100));
+}
 
-  .songs {
-    margin-bottom: 48px;
-    padding: 0 16px;
-    font-family: var(--font-body);
+.songs {
+  grid-area: songs;
+  margin-bottom: 48px;
+  padding: 0 16px;
+  font-family: var(--font-body);
 
-    @media screen and (min-width: 1200px) {
-      padding: 0;
-    }
-  }
-
-  .songsList {
-    display: grid;
-    grid: auto / repeat(auto-fill, minmax(320px, 1fr));
-    gap: 32px;
-    margin: 0;
+  @media screen and (min-width: 1200px) {
     padding: 0;
   }
+}
+
+.songsList {
+  display: grid;
+  grid: auto / repeat(auto-fill, minmax(320px, 1fr));
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
 </style>

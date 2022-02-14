@@ -1,21 +1,15 @@
----
-import Author from './Author.astro';
-
-export interface Props {
-  name: string;
-  artist: string;
-  publishDate: string;
-  heard: string[];
-  alt: string;
-}
-
-const { name, artist, publishDate, heard, alt } = Astro.props;
----
+<h2 class="title">歌詞</h2>
 <article class="lyric">
   <slot />
 </article>
 
 <style lang="scss">
+.title {
+  margin: 0 0 12px;
+  color: hsl(var(--color-dawn));
+  font-size: 1.6rem;
+}
+
 .lyric {
   display: grid;
   row-gap: 40px;

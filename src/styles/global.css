@@ -23,10 +23,6 @@ html {
 }
 
 body {
-	display: grid;
-	grid: auto 1fr auto / minmax(10px, 1168px);
-	justify-items: stretch;
-	justify-content: center;
 	min-height: 100vh;
 }
 

@@ -7,24 +7,22 @@ export interface Props {
 const { artist } = Astro.props;
 ---
 
-<header>
-  <nav>
-    <ul class="sitePathList">
-      <li class="sitePathItem">
-        <a class="link" href="/">
-          <img class="logo" src="/logo/monochrome.svg" alt="The Moment" />
-          Moment
-        </a>
-      </li>
-      <li class="sitePathItem">
-        <img class="pathIndicator" src="/chevronRight.svg" alt="下一項是：" />
-      </li>
-      <li class="sitePathItem pathTail">
-        🤘 {artist}
-      </li>
-    </ul>
-  </nav>
-</header>
+<nav>
+  <ul class="sitePathList">
+    <li class="sitePathItem">
+      <a class="link" href="/">
+        <img class="logo" src="/logo/monochrome.svg" alt="The Moment" />
+        Moment
+      </a>
+    </li>
+    <li class="sitePathItem">
+      <img class="pathIndicator" src="/chevronRight.svg" alt="下一項是：" />
+    </li>
+    <li class="sitePathItem pathTail">
+      🤘 {artist}
+    </li>
+  </ul>
+</nav>
 
 <style lang="scss">
 .sitePathList {
@@ -34,7 +32,6 @@ const { artist } = Astro.props;
   align-items: center;
   margin: 0;
   padding: 0 16px;
-  font-family: var(--font-body);
 
   @media screen and (min-width: 1200px) {
     padding: 0;
@@ -57,7 +54,7 @@ const { artist } = Astro.props;
 .logo {
   width: 20px;
   aspect-ratio: 1;
-  vertical-align: text-bottom;
+  vertical-align: bottom;
 }
 
 .pathIndicator {

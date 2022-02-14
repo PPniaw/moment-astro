@@ -14,15 +14,18 @@ const { name, year, permalink } = Astro.props;
 	<span class="year">{year}</span>
 </h1>
 
-<style>
+<style lang="scss">
 	.song {
 		display: grid;
 		grid: "cover song" auto
 		      "cover year" auto / 48px 1fr;
-		/* align-items: center; */
 		column-gap: 12px;
 		margin: 0 0 16px;
 		padding: 0 16px;
+
+		@media screen and (min-width: 992px) {
+    	padding: 0;
+  	}
 	}
 
 	.albumCover {
