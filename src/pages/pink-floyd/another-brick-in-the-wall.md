@@ -8,8 +8,8 @@ artist: 'Pink Floyd'
 permalink: 'pink-floyd/another-brick-in-the-wall'
 heard:
 - '🎬 迷牆 (1982)'
-publishedDate: '2020-12-13'
-modifiedDate: '2020-12-13'
+datePublished: '2020-12-13'
+dateModified: '2020-12-13'
 spotify: '4gMgiXfqyzZLMhsksGmbQV'
 ---
 

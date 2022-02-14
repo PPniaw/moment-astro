@@ -11,8 +11,8 @@ heard:
 - '🎬 自殺突擊隊 (2016)'
 - '▶️ 白日夢冒險王預告片 (2013)'
 - '🎬 天才智多星 (1992)'
-publishedDate: '2020-09-28'
-modifiedDate: '2020-09-28'
+datePublished: '2020-09-28'
+dateModified: '2020-09-28'
 spotify: '6fPm2XMi51l5GCEp19HscL'
 ---
 

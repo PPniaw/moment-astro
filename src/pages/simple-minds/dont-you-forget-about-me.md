@@ -10,8 +10,8 @@ heard:
 - '🎬 大黃蜂 (2018)'
 - '📺 黑鏡：San Junipero (2016)'
 - '🎬 早餐俱樂部 (1985)'
-publishedDate: '2020-09-21'
-modifiedDate: '2020-09-22'
+datePublished: '2020-09-21'
+dateModified: '2020-09-22'
 spotify: '3fH4KjXFYMmljxrcGrbPj9'
 ---
 

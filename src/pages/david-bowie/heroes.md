@@ -12,8 +12,8 @@ heard:
 - '▶️ 比利林恩的中場戰事預告片 (2016)'
 - '📺 怪奇物語第 1 季 (2016)'
 - '🎬 壁花男孩 (2012)'
-publishedDate: '2020-09-27'
-modifiedDate: '2021-02-01'
+datePublished: '2020-09-27'
+dateModified: '2021-02-01'
 spotify: '7Jh1bpe76CNTCgdgAdBw4Z'
 ---
 

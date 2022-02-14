@@ -11,8 +11,8 @@ heard:
 - '🎬 沙贊！(2019)'
 - '📺 雨傘學院第 1 季 (2019)'
 - '🎬 波西米亞狂想曲 (2018)'
-publishedDate: '2020-11-20'
-modifiedDate: '2020-11-20'
+datePublished: '2020-11-20'
+dateModified: '2020-11-20'
 spotify: '7hQJA50XrCWABAu5v6QZ4i'
 ---
 

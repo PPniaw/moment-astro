@@ -1,6 +1,11 @@
 ---
 export interface Props {
-	song: any;
+	song: {
+		url: string;
+		name: string;
+		year: string;
+		artist: string;
+	};
 }
 
 const { song } = Astro.props;
