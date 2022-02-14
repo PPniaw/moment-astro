@@ -5,7 +5,7 @@ setup: |
 name: 'Walk Like an Egyptian'
 year: '1986'
 artist: 'The Bangles'
-permalink: '/bangles/walk-like-an-egyptian'
+permalink: 'bangles/walk-like-an-egyptian'
 heard:
 - '📺 黑鏡：San Junipero (2016)'
 - '📺 JoJo 奇妙冒險：星塵鬥士 (2014)'

@@ -9,7 +9,7 @@ const { name, year, permalink } = Astro.props;
 ---
 
 <h1 class="song">
-	<img class="albumCover" src={`/assets${permalink}.jpg`} alt={`${name} 的專輯封面`} />
+	<img class="albumCover" src={`/assets/${permalink}.jpg`} alt={`${name} 的專輯封面`} />
 	<span class="name">{name}</span>
 	<span class="year">{year}</span>
 </h1>
