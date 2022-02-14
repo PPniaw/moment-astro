@@ -1,0 +1,74 @@
+---
+export interface Props {
+	song: any;
+}
+
+const { song } = Astro.props;
+---
+
+<li class="item">
+	<a class="link" href={song.url}>
+		<figure class="set">
+			<div class="album">
+				<img class="albumCover" src={`/assets${song.url}.jpg`} alt="" loading="lazy" />
+			</div>
+			<figcaption class="description">
+				<h2 class="name">{song.name}</h2>
+				<span class="artist">{song.artist}</span>
+				<span class="year">{song.year}</span>
+			</figcaption>
+		</figure>
+	</a>
+</li>
+
+<style lang="scss">
+	.link {
+		display: block;
+		text-decoration: none;
+	}
+
+	.set {
+		display: grid;
+		grid: auto / 48px 1fr;
+		column-gap: 12px;
+		margin: 0;
+	}
+
+	.album {
+		padding: 0 2px;
+	}
+
+	.albumCover {
+		max-width: 100%;
+		aspect-ratio: 1;
+		border: 1px solid hsla(var(--color-midnight300), 0.5);
+		border-radius: 4px;
+	}
+
+	.description {
+		display: grid;
+		grid: auto
+					24px
+					auto / auto;
+	}
+
+	.name {
+		margin: -6px 0 4px;
+		color: hsl(var(--color-dawn));
+		font-size: 2.4rem;
+		line-height: 32px;
+	}
+
+	.artist {
+		margin-bottom: 8px;
+		color: hsl(var(--color-shade1000));
+		font-size: 1.6rem;
+		font-weight: 400;
+	}
+
+	.year {
+		color: hsl(var(--color-shade1000));
+		font-size: 1.6rem;
+		font-weight: 400;
+	}
+</style>
