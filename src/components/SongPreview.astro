@@ -10,7 +10,7 @@ const { song } = Astro.props;
 	<a class="link" href={song.url}>
 		<figure class="set">
 			<div class="album">
-				<img class="albumCover" src={`/assets${song.url}.jpg`} alt="" loading="lazy" />
+				<img class="albumCover" src={`/album${song.url}.jpg`} alt="" loading="lazy" />
 			</div>
 			<figcaption class="description">
 				<h2 class="name">{song.name}</h2>
