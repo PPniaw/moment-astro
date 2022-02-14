@@ -6,7 +6,7 @@ export interface Props {
 const { song } = Astro.props;
 ---
 
-<li class="item">
+<li class="listItem">
 	<a class="link" href={song.url}>
 		<figure class="set">
 			<div class="album">
@@ -22,6 +22,10 @@ const { song } = Astro.props;
 </li>
 
 <style lang="scss">
+	.listItem {
+		list-style: none;
+	}
+
 	.link {
 		display: block;
 		text-decoration: none;
@@ -57,6 +61,7 @@ const { song } = Astro.props;
 		color: hsl(var(--color-dawn));
 		font-size: 2.4rem;
 		line-height: 32px;
+		font-weight: 500;
 	}
 
 	.artist {
