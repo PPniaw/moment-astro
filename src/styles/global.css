@@ -27,8 +27,8 @@ body {
 }
 
 ::selection {
-	color: var(--theme-accent);
-	background-color: rgba(var(--theme-accent-rgb), var(--theme-accent-opacity));
+	color: hsl(var(--color-midnight100));
+	background-color: hsl(var(--color-dawn));
 }
 
 * {

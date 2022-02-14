@@ -14,68 +14,86 @@ const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，�
 ---
 
 <html lang="zh-Hant-TW">
-	<head>
-		<BaseHead {title} {description} {permalink} />
-	</head>
-	<body>
-		<header class="songMeta">
-			<SitePathHeader {artist} />
-			<Heading {name} {year} {permalink} />
-			<div class="heard">
-				<Heard {heard} />
-			</div>
-		</header>
-		<main class="content">
-			<Lyric {title} {artist} {heroImage} {publishDate} {alt}>
-				<slot />
-			</Lyric>
-		</main>
-		<Footer />
-	</body>
+  <head>
+    <BaseHead {title} {description} {permalink} />
+  </head>
+  <body>
+    <header class="songMeta">
+      <SitePathHeader {artist} />
+      <Heading {name} {year} {permalink} />
+      <aside class="heard deviceDesktop">
+        <Heard {heard} />
+      </aside>
+    </header>
+    <aside class="heard deviceMobile">
+      <Heard {heard} />
+    </aside>
+    <main class="content">
+      <Lyric {title} {artist} {heroImage} {publishDate} {alt}>
+        <slot />
+      </Lyric>
+    </main>
+    <Footer />
+  </body>
 </html>
 
 <style lang="scss">
 body {
-	display: grid;
-	grid: "meta" auto
-				"lyric" auto
-				"footer" auto / auto;
-	background: hsl(var(--color-shade100));
+  display: grid;
+  grid: "meta" auto
+        "heard" auto
+        "lyric" auto
+        "footer" auto / auto;
+  background: hsl(var(--color-shade100));
 
-	@media screen and (min-width: 992px) {
-		grid: "meta lyric" auto
-					"footer footer" auto / 400px 592px;
-		justify-content: center;
-		column-gap: 48px;
-	}
+  @media screen and (min-width: 992px) {
+    grid: "meta lyric" auto
+          "heard lyric" auto
+          "footer footer" auto / 400px 592px;
+    align-items: start;
+    justify-content: center;
+    column-gap: 48px;
+  }
 }
 
 .songMeta {
-	grid-area: meta;
-	/* position: absolute; */
-	margin-bottom: 24px;
-	font-family: var(--font-body);
+  grid-area: meta;
+  position: sticky;
+  top: 0;
+  font-family: var(--font-body);
 }
 
 .heard {
-	/* position: sticky; */
-	z-index: 0;
-	padding: 12px 16px;
-	background-color: hsl(var(--color-midnight100));
+  grid-area: heard;
+  margin-bottom: 24px;
+  padding: 12px 16px;
+  background-color: hsl(var(--color-midnight100));
 
-	@media screen and (min-width: 992px) {
-		/* top: 100px; */
-		border-radius: 12px;
-	}
+  @media screen and (min-width: 992px) {
+    border-radius: 12px;
+  }
+
+  &.deviceMobile {
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+  &.deviceDesktop {
+    display: none;
+
+    @media screen and (min-width: 992px) {
+      display: block;
+    }
+  }
 }
 
 .content {
-	grid-area: lyric;
-	margin-bottom: 64px;
-	padding: 0 16px;
+  grid-area: lyric;
+  margin-bottom: 64px;
+  padding: 0 16px;
 
-	@media screen and (min-width: 992px) {
-		padding: 48px 0 0;
-	}
+  @media screen and (min-width: 992px) {
+    padding: 48px 0 0;
+  }
 }
 </style>
