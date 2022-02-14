@@ -1,5 +1,29 @@
 {
   "redirects": [
-    {"source": "/songs/take-on-me", "destination": "/a-ha/take-on-me"}
+    {"source": "/songs/take-on-me", "destination": "/a-ha/take-on-me"},
+    {"source": "/songs/back-in-black", "destination": "/ac-dc/back-in-black"},
+    {"source": "/songs/walk-like-an-egyptian", "destination": "/bangles/walk-like-an-egyptian"},
+    {"source": "/songs/stayin-alive", "destination": "/bee-gees/stayin-alive"},
+    {"source": "/songs/uptown-girl", "destination": "/billy-joel/uptown-girl"},
+    {"source": "/songs/we-didnt-start-the-fire", "destination": "/billy-joel/we-didnt-start-the-fire"},
+    {"source": "/songs/runaway", "destination": "/bon-jovi/runaway"},
+    {"source": "/songs/heroes", "destination": "/david-bowie/heroes"},
+    {"source": "/songs/space-oddity", "destination": "/david-bowie/space-oddity"},
+    {"source": "/songs/sweet-dreams", "destination": "/eurythmics/sweet-dreams"},
+    {"source": "/songs/i-ran-so-far-away", "destination": "/flock-of-seagulls/i-ran-so-far-away"},
+    {"source": "/songs/the-passengers", "destination": "/iggy-pop/the-passengers"},
+    {"source": "/songs/dont-stop-believin", "destination": "/journey/dont-stop-believin"},
+    {"source": "/songs/in-the-air-tonight", "destination": "/phil-collins/in-the-air-tonight"},
+    {"source": "/songs/another-brick-in-the-wall", "destination": "/pink-floyd/another-brick-in-the-wall"},
+    {"source": "/songs/bohemian-rhapsody", "destination": "/queen/bohemian-rhapsody"},
+    {"source": "/songs/dont-stop-me-now", "destination": "/queen/dont-stop-me-now"},
+    {"source": "/songs/radio-ga-ga", "destination": "/queen/radio-ga-ga"},
+    {"source": "/songs/under-pressure", "destination": "/queen-david-bowie/under-pressure"},
+    {"source": "/songs/never-gonna-give-you-up", "destination": "/rick-astley/never-gonna-give-you-up"},
+    {"source": "/songs/dont-you-forget-about-me", "destination": "/simple-minds/dont-you-forget-about-me"},
+    {"source": "/songs/everybody-wants-to-rule-the-world", "destination": "/tears-for-fears/everybody-wants-to-rule-the-world"},
+    {"source": "/songs/i-think-we-re-alone-now", "destination": "/tiffany/i-think-we-re-alone-now"},
+    {"source": "/songs/africa", "destination": "/toto/africa"},
+    {"source": "/songs/jump", "destination": "/van-halen/jump"}
   ]
 }
