@@ -5,7 +5,7 @@ setup: |
 name: 'Africa'
 year: '1982'
 artist: 'Toto'
-permalink: '/toto/africa'
+permalink: 'toto/africa'
 heard:
 - '📺 南方四賤客 (2016)'
 - '📺 怪奇物語第 1 季 (2016)'

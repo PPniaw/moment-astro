@@ -5,7 +5,7 @@ setup: |
 name: 'Take on Me'
 year: '1985'
 artist: 'A-Ha'
-permalink: '/a-ha/take-on-me'
+permalink: 'a-ha/take-on-me'
 heard:
 - '🎬 大黃蜂 (2018)'
 - '🎬 一級玩家 (2018)'

@@ -5,7 +5,7 @@ setup: |
 name: 'Back in Black'
 year: '1980'
 artist: 'AC/DC'
-permalink: '/ac-dc/back-in-black'
+permalink: 'ac-dc/back-in-black'
 heard:
 - '🎬 蜘蛛人：離家日 (2019)'
 - '🎬 鋼鐵人 (2008)'

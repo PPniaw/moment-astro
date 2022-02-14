@@ -4,8 +4,8 @@ setup: |
   import LyricSection from '../../components/LyricSection.astro';
 name: 'Under Pressure'
 year: '1981'
-artist: 'David Bowie & Queen'
-permalink: 'david-bowie-queen/under-pressure'
+artist: 'Queen & David Bowie'
+permalink: 'queen-david-bowie/under-pressure'
 heard:
 - '🎬 波西米亞狂想曲 (2018)'
 - '🎬 歡樂好聲音 (2016)'

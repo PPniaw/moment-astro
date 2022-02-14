@@ -5,7 +5,7 @@ setup: |
 name: 'Everybody Wants to Rule the World'
 year: '1985'
 artist: 'Tears for Fears'
-permalink: '/tears-for-fears/everybody-wants-to-rule-the-world'
+permalink: 'tears-for-fears/everybody-wants-to-rule-the-world'
 heard:
 - '🎬 大黃蜂 (2018)'
 - '🎬 一級玩家 (2018)'
