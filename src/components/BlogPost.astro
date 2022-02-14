@@ -2,29 +2,23 @@
 import Author from './Author.astro';
 
 export interface Props {
-	name: string;
-	artist: string;
-	publishDate: string;
-	heard: string[];
-	alt: string;
+  name: string;
+  artist: string;
+  publishDate: string;
+  heard: string[];
+  alt: string;
 }
 
 const { name, artist, publishDate, heard, alt } = Astro.props;
 ---
-
-<div class="layout">
-		<ul>
-		{
-			heard.map((medium) => {
-				return <li>{medium}</li>
-			})
-		}
-		</ul>
-	<main>
-		<slot />
-	</main>
-</div>
+<article class="lyric">
+  <slot />
+</article>
 
 <style lang="scss">
-
+.lyric {
+  display: grid;
+  row-gap: 40px;
+  font-family: var(--font-body);
+}
 </style>

@@ -1,6 +1,8 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import SitePathHeader from '../components/SitePathHeader.astro';
+import Heading from '../components/Heading.astro';
+import Heard from '../components/Heard.astro';
 import BlogPost from '../components/BlogPost.astro';
 import Footer from '../components/Footer.astro';
 
@@ -18,11 +20,18 @@ const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，�
 
 	<body>
 		<SitePathHeader {artist} />
-		<div class="wrapper">
-			<BlogPost {title} {artist} {heroImage} {publishDate} {heard} {alt}>
+		{
+			console.log(content)
+		}
+		<Heading {name} {year} {permalink} />
+		<aside class="heard">
+			<Heard {heard} />
+		</aside>
+		<main class="content">
+			<BlogPost {title} {artist} {heroImage} {publishDate} {alt}>
 				<slot />
 			</BlogPost>
-		</div>
+		</main>
 		<Footer />
 	</body>
 </html>
@@ -30,5 +39,27 @@ const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，�
 <style lang="scss">
 	body {
 		background: hsl(var(--color-shade100));
+	}
+
+	.heard {
+		/* grid-area: heard; */
+		margin-bottom: 32px;
+		padding: 12px 16px;
+		font-family: var(--font-body);
+		background-color: hsl(var(--color-midnight100));
+
+		@media screen and (min-width: 1200px) {
+    	padding: 0;
+  	}
+	}
+
+	.content {
+		/* grid-area: lyric; */
+		margin-bottom: 64px;
+		padding: 0 16px;
+
+		@media screen and (min-width: 1200px) {
+    	padding: 0;
+  	}
 	}
 </style>
