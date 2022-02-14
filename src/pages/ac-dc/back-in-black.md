@@ -1,6 +1,6 @@
 ---
 setup: |
-  import Layout from '../../layouts/BlogPost.astro';
+  import Layout from '../../layouts/Song.astro';
   import LyricSection from '../../components/LyricSection.astro';
 name: 'Back in Black'
 year: '1980'

@@ -7,7 +7,7 @@ export interface Props {
 const { artist } = Astro.props;
 ---
 
-<nav>
+<nav class="sitePath">
   <ul class="sitePathList">
     <li class="sitePathItem">
       <a class="link" href="/">
@@ -25,6 +25,11 @@ const { artist } = Astro.props;
 </nav>
 
 <style lang="scss">
+.sitePath {
+	background: hsla(var(--color-shade100), 0.5);
+  backdrop-filter: blur(12px);
+}
+
 .sitePathList {
   display: grid;
   grid: auto / max-content 8px 1fr;
@@ -33,7 +38,7 @@ const { artist } = Astro.props;
   margin: 0;
   padding: 0 16px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 992px) {
     padding: 0;
   }
 }

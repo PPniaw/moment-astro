@@ -1,6 +1,6 @@
 ---
 setup: |
-  import Layout from '../../layouts/BlogPost.astro';
+  import Layout from '../../layouts/Song.astro';
   import LyricSection from '../../components/LyricSection.astro';
 name: 'Everybody Wants to Rule the World'
 year: '1985'
