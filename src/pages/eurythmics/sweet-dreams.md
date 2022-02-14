@@ -8,8 +8,8 @@ artist: 'Eurythmics'
 permalink: 'eurythmics/sweet-dreams'
 heard:
 - '🎬 創：光速戰記 (2010)'
-publishedDate: '2020-11-07'
-modifiedDate: '2020-11-07'
+datePublished: '2020-11-07'
+dateModified: '2020-11-07'
 spotify: '1TfqLAPs4K3s2rJMoCokcS'
 ---
 

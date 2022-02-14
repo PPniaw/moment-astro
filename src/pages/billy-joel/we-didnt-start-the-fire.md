@@ -9,8 +9,8 @@ permalink: 'billy-joel/we-didnt-start-the-fire'
 heard:
 - '▶️ 復仇者聯盟：終局之戰宣傳影片 (2019)'
 - '📺 蓋酷家庭：Bigtap (2013)'
-publishedDate: '2020-09-22'
-modifiedDate: '2020-09-23'
+datePublished: '2020-09-22'
+dateModified: '2020-09-23'
 spotify: '3Cx4yrFaX8CeHwBMReOWXI'
 ---
 

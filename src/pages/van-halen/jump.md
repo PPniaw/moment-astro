@@ -8,8 +8,8 @@ artist: 'Van Halen'
 permalink: 'van-halen/jump'
 heard:
 - '🎬 一級玩家 (2018)'
-publishedDate: '2020-10-11'
-modifiedDate: '2020-10-11'
+datePublished: '2020-10-11'
+dateModified: '2020-10-11'
 spotify: '6Fba9RZtC6vTY814JToDtP'
 ---
 

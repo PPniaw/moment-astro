@@ -10,8 +10,8 @@ heard:
 - '🎬 搖滾時代 (2012)'
 - '🎬 魔球 (2011)'
 - '🎬 歌舞青春 (2004)'
-publishedDate: '2020-09-21'
-modifiedDate: '2020-09-22'
+datePublished: '2020-09-21'
+dateModified: '2020-09-22'
 spotify: '4bHsxqR3GMrXTxEPLuK5ue'
 ---
 

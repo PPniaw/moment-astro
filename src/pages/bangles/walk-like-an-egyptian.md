@@ -10,8 +10,8 @@ heard:
 - '📺 黑鏡：San Junipero (2016)'
 - '📺 JoJo 奇妙冒險：星塵鬥士 (2014)'
 - '📺 蓋酷家庭：420 (2009)'
-publishedDate: '2020-10-05'
-modifiedDate: '2020-10-05'
+datePublished: '2020-10-05'
+dateModified: '2020-10-05'
 spotify: '5L6HNuXN71bfeuKXYtRasF'
 ---
 

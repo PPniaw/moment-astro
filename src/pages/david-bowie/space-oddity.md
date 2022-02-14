@@ -9,8 +9,8 @@ permalink: 'david-bowie/space-oddity'
 heard:
 - '🎬 憤怒鳥玩電影：冰的啦！(2019)'
 - '🎬 白日夢冒險王 (2013)'
-publishedDate: '2020-09-27'
-modifiedDate: '2021-02-01'
+datePublished: '2020-09-27'
+dateModified: '2021-02-01'
 spotify: '72Z17vmmeQKAg8bptWvpVG'
 ---
 

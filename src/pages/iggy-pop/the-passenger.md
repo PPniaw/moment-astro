@@ -9,8 +9,8 @@ permalink: 'iggy-pop/the-passenger'
 heard:
 - '📺 AV 帝王 (2019)'
 - '🎬 夏 (2018)'
-publishedDate: '2020-11-10'
-modifiedDate: '2020-11-10'
+datePublished: '2020-11-10'
+dateModified: '2020-11-10'
 spotify: '15BQ7vEDv2LJuh8TxWIhtd'
 ---
 

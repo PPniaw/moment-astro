@@ -11,8 +11,8 @@ heard:
 - '🎬 炫目之光 (2019)'
 - '🎬 熊麻吉 2 (2015)'
 - '🎬 熊麻吉 (2012)'
-publishedDate: '2020-11-07'
-modifiedDate: '2020-11-07'
+datePublished: '2020-11-07'
+dateModified: '2020-11-07'
 spotify: '4uvjOKsp7mSjrDhWdkLPBY'
 ---
 
