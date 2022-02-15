@@ -7,10 +7,13 @@ year: '1969'
 artist: 'David Bowie'
 permalink: 'david-bowie/space-oddity'
 heard:
+- '📺 西方極樂園第 3 季 (2020)'
+- '📺 星際爭霸戰：發現號第 2 季 (2019)'
 - '🎬 憤怒鳥玩電影：冰的啦！(2019)'
+- '🎬 劇團零號 (2019)'
 - '🎬 白日夢冒險王 (2013)'
 datePublished: '2020-09-27'
-dateModified: '2021-02-01'
+dateModified: '2022-02-15'
 spotify: '72Z17vmmeQKAg8bptWvpVG'
 ---
 
