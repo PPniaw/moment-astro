@@ -7,9 +7,11 @@ year: '1983'
 artist: 'Eurythmics'
 permalink: 'eurythmics/sweet-dreams'
 heard:
+- '🎬 X 戰警：天啟 (2017)'
+- '📺 荒唐分局第 3 季 (2015)'
 - '🎬 創：光速戰記 (2010)'
 datePublished: '2020-11-07'
-dateModified: '2020-11-07'
+dateModified: '2022-02-15'
 spotify: '1TfqLAPs4K3s2rJMoCokcS'
 ---
 
