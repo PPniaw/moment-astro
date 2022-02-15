@@ -9,7 +9,7 @@ import Footer from '../components/Footer.astro';
 const { content } = Astro.props;
 const { name, year, publishDate, heard, artist, heroImage, permalink, datePublished, dateModified, alt } = content;
 
-const title = `聽到 ${name} -${artist}- 的電視影劇`
+const title = `聽到 ${name} | ${artist} 的電視影劇`
 const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，出現在${heard.join('、')}。`
 ---
 
