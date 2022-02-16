@@ -10,7 +10,9 @@ const { artist } = Astro.props;
   <ul class="sitePathList">
     <li class="sitePathItem">
       <a class="link" href="/">
-        <img class="logo" src="/logo/monochrome.svg" alt="The Moment" />
+        <span class="logo">
+          <img class="logoImage" src="/logo/momentPathSpin.svg" alt="The Moment" />
+        </span>
         Moment
       </a>
     </li>
@@ -48,12 +50,28 @@ const { artist } = Astro.props;
   font-size: 1.4rem;
   line-height: 20px;
   text-decoration: none;
+
+  &:hover {
+    .logoImage {
+      opacity: 1;
+      transition: opacity 0.25s ease-in;
+    }
+  }
 }
 
 .logo {
+  display: inline-block;
+  width: 20px;
+  aspect-ratio: 1;
+  background-image: url("/logo/monochrome.svg");
+}
+
+.logoImage {
+  opacity: 0;
   width: 20px;
   aspect-ratio: 1;
   vertical-align: bottom;
+  transition: opacity 0.25s ease-out;
 }
 
 .pathIndicator {

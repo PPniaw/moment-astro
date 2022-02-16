@@ -33,7 +33,13 @@ const { song } = Astro.props;
 
 	.link {
 		display: block;
+		padding: 8px 0 8px 8px;
 		text-decoration: none;
+		border-radius: 12px;
+
+		&:hover {
+			background-color: hsl(var(--color-shade300));
+		}
 	}
 
 	.set {
