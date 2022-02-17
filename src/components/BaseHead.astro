@@ -2,12 +2,13 @@
 export interface Props {
   title: string;
   description: string;
+  name: string;
   permalink: string;
   schemaHome: boolean;
   artist: string;
 }
 
-const { title, description, permalink, artist, schemaHome, datePublished, dateModified } = Astro.props;
+const { title, description, name, permalink, artist, schemaHome, datePublished, dateModified } = Astro.props;
 
 const ogCoverPath = permalink ? `${permalink}.jpg` : 'home.jpg';
 const canonicalPath = permalink ? permalink : '';
@@ -16,6 +17,7 @@ const modified = new Date(dateModified).toISOString();
 
 const moreSchema = schemaHome ? '' : {
   '@type': 'BreadcrumbList',
+  name,
   'itemListElement': [{
     '@type': 'ListItem',
     'position': 1,
