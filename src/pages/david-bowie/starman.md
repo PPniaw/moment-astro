@@ -7,13 +7,24 @@ year: '1972'
 artist: 'David Bowie'
 permalink: 'david-bowie/starman'
 heard:
-- '▶️ 巴斯光年電影預告片 (2022)'
-- '📺 皇冠第 3 季 (2019)'
-- '🎬 劇團零號 (2019)'
-- '📺 辛普森家庭第 26 季 (2015)'
-- '🎬 絕地救援 (2015)'
+  - emoji: '▶️'
+    media:
+      - name: '巴斯光年電影預告片'
+        year: '2022'
+  - emoji: '🎬'
+    media:
+      - name: '劇團零號'
+        year: '2019'
+      - name: '絕地救援'
+        year: '2015'
+  - emoji: '📺'
+    media:
+      - name: '皇冠第 3 季'
+        year: '2019'
+      - name: '辛普森家庭第 26 季'
+        year: '2015'
 datePublished: '2022-02-15'
-dateModified: '2022-02-15'
+dateModified: '2022-02-18'
 spotify: '0pQskrTITgmCMyr85tb9qq'
 ---
 

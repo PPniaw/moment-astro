@@ -4,9 +4,9 @@
 	--font-mono: 'IBM Plex Mono', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
 		'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
 
-	--color-shade100:  208, 32%, 6%;
-	--color-shade300:  208, 32%, 20%;
-	--color-shade1000: 208, 32%, 72%;
+	--color-shade100:  208, 12%, 6%;
+	--color-shade300:  208, 12%, 20%;
+	--color-shade1000: 208, 12%, 72%;
 
 	--color-dawn: 16, 68%, 68%;
 
