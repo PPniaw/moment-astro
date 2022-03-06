@@ -7,7 +7,10 @@ year: '1979'
 artist: 'Pink Floyd'
 permalink: 'pink-floyd/another-brick-in-the-wall'
 heard:
-- '🎬 迷牆 (1982)'
+  - emoji: '🎬'
+    media:
+      - name: '迷牆'
+        year: '1982'
 datePublished: '2020-12-13'
 dateModified: '2020-12-13'
 spotify: '4gMgiXfqyzZLMhsksGmbQV'

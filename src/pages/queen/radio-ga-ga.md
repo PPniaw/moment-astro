@@ -7,7 +7,10 @@ year: '1984'
 artist: 'Queen'
 permalink: 'queen/radio-ga-ga'
 heard:
-- '🎬 波西米亞狂想曲 (2018)'
+  - emoji: '🎬'
+    media:
+      - name: '波西米亞狂想曲'
+        year: '2018'
 datePublished: '2020-09-24'
 dateModified: '2020-09-24'
 spotify: '2jAc9KIQ9XoZxkydXh3MVh'

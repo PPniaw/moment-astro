@@ -7,10 +7,16 @@ year: '1977'
 artist: 'Iggy Pop'
 permalink: 'iggy-pop/the-passenger'
 heard:
-- '📺 AV 帝王 (2019)'
-- '🎬 夏 (2018)'
+  - emoji: '📺'
+    media:
+      - name: 'AV 帝王第 1 季'
+        year: '2019'
+  - emoji: '🎬'
+    media:
+      - name: 'Leto'
+        year: '2018'
 datePublished: '2020-11-10'
-dateModified: '2020-11-10'
+dateModified: '2022-03-07'
 spotify: '15BQ7vEDv2LJuh8TxWIhtd'
 ---
 
