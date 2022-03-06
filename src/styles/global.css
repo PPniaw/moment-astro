@@ -1,21 +1,19 @@
 :root {
 	--font-fallback: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 	--font-body: 'Inter', var(--font-fallback);
-	--font-mono: 'IBM Plex Mono', Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono',
-		'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+	--font-mono: 'Monaco', 'Courier New', 'Courier', monospace;
 
-	--color-shade100:  208, 12%, 6%;
-	--color-shade300:  208, 12%, 20%;
+	--color-shade0:  208, 12%, 6%;
+	--color-shade100: 225, 26%, 16%;
+	--color-shade200:  208, 12%, 20%;
+	--color-shade300: 225, 26%, 32%;
+	--color-shade600: 225, 26%, 45%;
+	--color-shade700: 225, 26%, 56%;
 	--color-shade1000: 208, 12%, 72%;
+	--color-shade1100: 225, 26%, 80%;
+	--color-shade1600: 225, 26%, 96%;
 
 	--color-dawn: 16, 68%, 68%;
-
-	--color-midnight100: 225, 26%, 16%;
-	--color-midnight300: 225, 26%, 32%;
-	--color-midnight600: 225, 26%, 45%;
-	--color-midnight700: 225, 26%, 56%;
-	--color-midnight1100: 225, 26%, 80%;
-	--color-midnight1600: 225, 26%, 92%;
 }
 
 html {
@@ -27,7 +25,7 @@ body {
 }
 
 ::selection {
-	color: hsl(var(--color-midnight100));
+	color: hsl(var(--color-shade100));
 	background-color: hsl(var(--color-dawn));
 }
 
