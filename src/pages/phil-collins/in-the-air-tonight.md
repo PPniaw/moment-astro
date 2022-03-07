@@ -7,8 +7,14 @@ year: '1981'
 artist: 'Phil Collins'
 permalink: 'phil-collins/in-the-air-tonight'
 heard:
-- '▶️ Mercedes-Benz 2013 CLS 63 廣告 (2013)'
-- '🎬 醉後大丈夫 (2009)'
+  - emoji: '▶️'
+    media:
+      - name: 'Mercedes-Benz 2013 CLS 63 廣告'
+        year: '2013'
+  - emoji: '🎬'
+    media:
+      - name: '醉後大丈夫'
+        year: '2009'
 datePublished: '2020-11-10'
 dateModified: '2020-11-10'
 spotify: '18AXbzPzBS8Y3AkgSxzJPb'

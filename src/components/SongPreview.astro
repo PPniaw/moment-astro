@@ -19,8 +19,7 @@ const { song } = Astro.props;
 			</div>
 			<figcaption class="description">
 				<h2 class="name">{song.name}</h2>
-				<span class="artist">{song.artist}</span>
-				<span class="year">{song.year}</span>
+				<span class="whoWhen">{song.artist}﹒{song.year}</span>
 			</figcaption>
 		</figure>
 	</a>
@@ -33,13 +32,14 @@ const { song } = Astro.props;
 
 	.link {
 		display: block;
+		margin-left: -8px;
 		padding: 8px 0 8px 8px;
 		text-decoration: none;
 		border-radius: 12px;
 		transition: background-color 0.2s ease-out;
 
 		&:hover {
-			background-color: hsl(var(--color-shade300));
+			background-color: hsl(var(--color-shade100));
 			transition: background-color 0.2s ease-in;
 		}
 	}
@@ -58,7 +58,7 @@ const { song } = Astro.props;
 	.albumCover {
 		max-width: 100%;
 		aspect-ratio: 1;
-		border: 1px solid hsla(var(--color-midnight300), 0.5);
+		border: 1px solid hsla(var(--color-shade300), 0.5);
 		border-radius: 4px;
 	}
 
@@ -77,14 +77,7 @@ const { song } = Astro.props;
 		font-weight: 500;
 	}
 
-	.artist {
-		margin-bottom: 8px;
-		color: hsl(var(--color-shade1000));
-		font-size: 1.6rem;
-		font-weight: 400;
-	}
-
-	.year {
+	.whoWhen {
 		color: hsl(var(--color-shade1000));
 		font-size: 1.6rem;
 		font-weight: 400;

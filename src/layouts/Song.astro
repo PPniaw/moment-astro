@@ -9,8 +9,8 @@ import Footer from '../components/Footer.astro';
 const { content } = Astro.props;
 const { name, year, publishDate, heard, artist, heroImage, permalink, datePublished, dateModified, alt } = content;
 
-const title = `聽到 ${name} | ${artist} 的電視影劇`
-const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，出現在${heard.join('、')}。`
+const title = `聽到 ${name} | ${artist} 的電視影劇`;
+const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，出現在${heard.join('、')}。`;
 ---
 
 <html lang="zh-Hant-TW">
@@ -44,12 +44,12 @@ body {
         "heard" auto
         "lyric" auto
         "footer" auto / auto;
-  background: hsl(var(--color-shade100));
+  background: hsl(var(--color-shade0));
 
   @media screen and (min-width: 992px) {
     grid: "meta lyric" auto
           "heard lyric" auto
-          "footer footer" auto / 400px 592px;
+          "footer footer" auto / 400px minmax(10px, 560px);
     align-items: start;
     justify-content: center;
     column-gap: 48px;
@@ -61,22 +61,22 @@ body {
   position: sticky;
   top: 0;
   font-family: var(--font-body);
-  background: hsla(var(--color-shade100), 0.5);
+  background: hsla(var(--color-shade0), 0.5);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
+
+
+  @media screen and (min-width: 992px) {
+    padding-left: 16px;
+  }
 }
 
 .heard {
   grid-area: heard;
-  margin-bottom: 24px;
-  padding: 12px 16px;
-  background-color: hsl(var(--color-midnight100));
-
-  @media screen and (min-width: 992px) {
-    border-radius: 12px;
-  }
 
   &.deviceMobile {
+    margin: 0 16px 24px;
+
     @media screen and (min-width: 992px) {
       display: none;
     }

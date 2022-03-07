@@ -7,8 +7,14 @@ year: '1984'
 artist: 'Bon Jovi'
 permalink: 'bon-jovi/runaway'
 heard:
-- '🎬 大黃蜂 (2018)'
-- '📺 怪奇物語第 2 季 (2017)'
+  - emoji: '▶️'
+    media:
+      - name: '大黃蜂'
+        year: '2018'
+  - emoji: '📺'
+    media:
+      - name: '怪奇物語第 2 季'
+        year: '2017'
 datePublished: '2020-12-28'
 dateModified: '2020-12-28'
 spotify: '0X1sqQ652p1sceKM2nJlIJ'

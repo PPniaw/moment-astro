@@ -7,8 +7,14 @@ year: '1989'
 artist: 'Billy Joel'
 permalink: 'billy-joel/we-didnt-start-the-fire'
 heard:
-- '▶️ 復仇者聯盟：終局之戰宣傳影片 (2019)'
-- '📺 蓋酷家庭：Bigtap (2013)'
+  - emoji: '▶️'
+    media:
+      - name: '復仇者聯盟：終局之戰宣傳影片'
+        year: '2019'
+  - emoji: '📺'
+    media:
+      - name: '蓋酷家庭第 9 季'
+        year: '2013'
 datePublished: '2020-09-22'
 dateModified: '2020-09-23'
 spotify: '3Cx4yrFaX8CeHwBMReOWXI'
