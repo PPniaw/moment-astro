@@ -4,7 +4,7 @@ setup: |
   import LyricSection from '../../components/LyricSection.astro';
 name: 'Under Pressure'
 year: '1981'
-artist: 'Queen & David Bowie'
+artist: 'Queen &amp; David Bowie'
 permalink: 'queen-david-bowie/under-pressure'
 heard:
   - emoji: '🎬'
