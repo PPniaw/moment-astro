@@ -19,7 +19,7 @@ const { song } = Astro.props;
 			</div>
 			<figcaption class="description">
 				<h2 class="name">{song.name}</h2>
-				<span class="whoWhen">{song.artist}﹒{song.year}</span>
+				<span class="whoWhen" set:html={`${song.artist}﹒${song.year}`} />
 			</figcaption>
 		</figure>
 	</a>
