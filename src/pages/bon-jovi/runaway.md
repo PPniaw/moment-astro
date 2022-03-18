@@ -7,7 +7,7 @@ year: '1984'
 artist: 'Bon Jovi'
 permalink: 'bon-jovi/runaway'
 heard:
-  - emoji: '▶️'
+  - emoji: '🎬'
     media:
       - name: '大黃蜂'
         year: '2018'
