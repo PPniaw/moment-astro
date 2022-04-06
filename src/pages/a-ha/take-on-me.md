@@ -1,7 +1,7 @@
 ---
+layout: ../../layouts/Song.astro
 setup: |
-  import Layout from '../../layouts/Song.astro';
-  import LyricSection from '../../components/LyricSection.astro';
+  import LyricSection from '../../components/LyricSection.astro'
 name: 'Take on Me'
 year: '1985'
 artist: 'A-Ha'
@@ -51,7 +51,6 @@ I will be coming for your love, okay?
 </LyricSection>
 
 <LyricSection>
-
 Take on me (take on me)
 
 Take me on (take on me)

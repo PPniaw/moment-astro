@@ -18,8 +18,8 @@ const { song } = Astro.props;
 				<img class="albumCover" src={`/album${song.url}.jpg`} alt="" loading="lazy" />
 			</div>
 			<figcaption class="description">
-				<h2 class="name">{song.name}</h2>
-				<span class="whoWhen" set:html={`${song.artist}﹒${song.year}`} />
+				<h2 class="name">{song.frontmatter.name}</h2>
+				<span class="whoWhen" set:html={`${song.frontmatter.artist}﹒${song.frontmatter.year}`} />
 			</figcaption>
 		</figure>
 	</a>

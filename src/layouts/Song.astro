@@ -3,13 +3,13 @@ import BaseHead from '../components/BaseHead.astro';
 import SitePathHeader from '../components/SitePathHeader.astro';
 import Heading from '../components/Heading.astro';
 import Heard from '../components/Heard.astro';
-import Lyric from '../components/Lyric.astro';
+// import Lyric from '../components/Lyric.astro';
 import Footer from '../components/Footer.astro';
 
 const { content } = Astro.props;
 const { name, year, publishDate, heard, artist, heroImage, permalink, datePublished, dateModified, alt } = content;
 
-const title = `聽到 ${name} | ${artist} 的電視影劇`;
+const title = `聽到 ${name} | ${artist} 的電影、電視劇`;
 
 const descriptionHeard = (heards) => {
   const lv1 = heards.map(({ media }) => {
@@ -29,7 +29,7 @@ const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，�
   <head>
     <BaseHead {title} {description} {name} {permalink} {datePublished} {dateModified} {artist} />
   </head>
-  <body>
+  <body data-body-style="song">
     <header class="songMeta">
       <SitePathHeader {artist} />
       <Heading {name} {year} {permalink} />
@@ -41,33 +41,16 @@ const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，�
       <Heard {heard} />
     </aside>
     <main class="content">
-      <Lyric {title} {artist} {heroImage} {publishDate} {alt}>
+      <h2 class="songTitle">歌詞</h2>
+      <article class="songLyric">
         <slot />
-      </Lyric>
+      </article>
     </main>
     <Footer />
   </body>
 </html>
 
 <style lang="scss">
-body {
-  display: grid;
-  grid: "meta" auto
-        "heard" auto
-        "lyric" auto
-        "footer" auto / auto;
-  background: hsl(var(--color-shade0));
-
-  @media screen and (min-width: 992px) {
-    grid: "meta lyric" auto
-          "heard lyric" auto
-          "footer footer" auto / 400px minmax(10px, 560px);
-    align-items: start;
-    justify-content: center;
-    column-gap: 48px;
-  }
-}
-
 .songMeta {
   grid-area: meta;
   position: sticky;
@@ -110,5 +93,17 @@ body {
   @media screen and (min-width: 992px) {
     padding: 48px 0 0;
   }
+}
+
+.songTitle {
+  margin: 0 0 12px;
+  color: hsl(var(--color-dawn));
+  font-size: 1.6rem;
+}
+
+.songLyric {
+  display: grid;
+  row-gap: 40px;
+  font-family: var(--font-body);
 }
 </style>

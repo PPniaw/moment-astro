@@ -10,7 +10,7 @@ let schemaHome = true;
 let datePublished = '2020-09-21';
 let dateModified = '2022-03-18';
 
-let allSongs = await Astro.fetchContent('./*/*.md');
+let allSongs = await Astro.glob('./*/*.md');
 allSongs = allSongs.sort((a, b) => new Date(b.datePublished).valueOf() - new Date(a.datePublished).valueOf());
 ---
 
@@ -18,7 +18,7 @@ allSongs = allSongs.sort((a, b) => new Date(b.datePublished).valueOf() - new Dat
   <head>
     <BaseHead {title} {description} {schemaHome} {datePublished} {dateModified} />
   </head>
-  <body>
+  <body data-body-style="index">
     <SiteNameHeader />
     <main class="songs">
       <ul class="songsList">
@@ -30,16 +30,6 @@ allSongs = allSongs.sort((a, b) => new Date(b.datePublished).valueOf() - new Dat
 </html>
 
 <style lang="scss">
-body {
-  display: grid;
-  grid: "sitename" auto
-        "songs" 1fr
-        "footer" auto / minmax(10px, 1168px);
-  justify-items: stretch;
-  justify-content: center;
-  background: hsl(var(--color-shade0));
-}
-
 .songs {
   grid-area: songs;
   margin-bottom: 48px;
