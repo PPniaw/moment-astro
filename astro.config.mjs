@@ -12,5 +12,6 @@ export default defineConfig({
   outDir: './dist',
   integrations: [preact()],
   site: 'https://moment.intersection.tw',
-  trailingSlash: 'never'
+  trailingSlash: 'never',
+  markdown: { mode: 'mdx' }
 });
