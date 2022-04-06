@@ -3,7 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import SitePathHeader from '../components/SitePathHeader.astro';
 import Heading from '../components/Heading.astro';
 import Heard from '../components/Heard.astro';
-import Lyric from '../components/Lyric.astro';
+// import Lyric from '../components/Lyric.astro';
 import Footer from '../components/Footer.astro';
 
 const { content } = Astro.props;
@@ -41,9 +41,10 @@ const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，�
       <Heard {heard} />
     </aside>
     <main class="content">
-      <Lyric {title} {artist} {heroImage} {publishDate} {alt}>
+      <h2 class="songTitle">歌詞</h2>
+      <article class="songLyric">
         <slot />
-      </Lyric>
+      </article>
     </main>
     <Footer />
   </body>
@@ -92,5 +93,17 @@ const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，�
   @media screen and (min-width: 992px) {
     padding: 48px 0 0;
   }
+}
+
+.songTitle {
+  margin: 0 0 12px;
+  color: hsl(var(--color-dawn));
+  font-size: 1.6rem;
+}
+
+.songLyric {
+  display: grid;
+  row-gap: 40px;
+  font-family: var(--font-body);
 }
 </style>

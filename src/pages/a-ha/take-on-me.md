@@ -35,6 +35,7 @@ spotify: '2WfaOiMkCvy7F5fcp2zZ8L'
 ---
 
 <LyricSection>
+
 We are talking away
 
 I don&rsquo;t know what

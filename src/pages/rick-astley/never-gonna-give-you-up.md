@@ -1,7 +1,7 @@
 ---
+layout: ../../layouts/Song.astro
 setup: |
-  import Layout from '../../layouts/Song.astro';
-  import LyricSection from '../../components/LyricSection.astro';
+  import LyricSection from '../../components/LyricSection.astro'
 name: 'Never Gonna Give You Up'
 year: '1987'
 artist: 'Rick Astley'
