@@ -9,7 +9,7 @@ import Footer from '../components/Footer.astro';
 const { content } = Astro.props;
 const { name, year, publishDate, heard, artist, heroImage, permalink, datePublished, dateModified, alt } = content;
 
-const title = `聽到 ${name} | ${artist} 的電視影劇`;
+const title = `聽到 ${name} | ${artist} 的電影、電視劇`;
 
 const descriptionHeard = (heards) => {
   const lv1 = heards.map(({ media }) => {
@@ -29,7 +29,7 @@ const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，�
   <head>
     <BaseHead {title} {description} {name} {permalink} {datePublished} {dateModified} {artist} />
   </head>
-  <body>
+  <body data-body-style="song">
     <header class="songMeta">
       <SitePathHeader {artist} />
       <Heading {name} {year} {permalink} />
@@ -50,24 +50,6 @@ const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，�
 </html>
 
 <style lang="scss">
-body {
-  display: grid;
-  grid: "meta" auto
-        "heard" auto
-        "lyric" auto
-        "footer" auto / auto;
-  background: hsl(var(--color-shade0));
-
-  @media screen and (min-width: 992px) {
-    grid: "meta lyric" auto
-          "heard lyric" auto
-          "footer footer" auto / 400px minmax(10px, 560px);
-    align-items: start;
-    justify-content: center;
-    column-gap: 48px;
-  }
-}
-
 .songMeta {
   grid-area: meta;
   position: sticky;

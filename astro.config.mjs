@@ -1,3 +1,5 @@
+import { defineConfig } from 'astro/config';
+import preact from '@astrojs/preact';
 // Full Astro Configuration API Documentation:
 // https://docs.astro.build/reference/configuration-reference
 
@@ -6,13 +8,9 @@
 // helpful tooltips, and warnings if your exported object is invalid.
 // You can disable this by removing "@ts-check" and `@type` comments below.
 
-// @ts-check
-export default /** @type {import('astro').AstroUserConfig} */ ({
-  // Enable the Preact renderer to support Preact JSX components.
-  renderers: ['@astrojs/renderer-preact'],
-  dist: './dist',
-  buildOptions: {
-    sitemap: true,
-    site: 'https://moment.intersection.tw/'
-  }
+export default defineConfig({
+  outDir: './dist',
+  integrations: [preact()],
+  site: 'https://moment.intersection.tw',
+  trailingSlash: 'never'
 });

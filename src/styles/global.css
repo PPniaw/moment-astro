@@ -21,7 +21,37 @@ html {
 }
 
 body {
+	display: grid;
 	min-height: 100vh;
+}
+
+[data-body-style="index"] {
+  grid: "sitename" auto
+        "songs" 1fr
+        "footer" auto / minmax(10px, 1168px);
+  justify-items: stretch;
+  justify-content: center;
+  background: hsl(var(--color-shade0));
+}
+
+
+[data-body-style="song"] {
+  grid: "meta" auto
+        "heard" auto
+        "lyric" auto
+        "footer" auto / auto;
+  background: hsl(var(--color-shade0));
+}
+
+@media screen and (min-width: 992px) {
+	[data-body-style="song"] {
+		grid: "meta lyric" auto
+					"heard lyric" auto
+					"footer footer" auto / 400px minmax(10px, 560px);
+		align-items: start;
+		justify-content: center;
+		column-gap: 48px;
+	}
 }
 
 ::selection {
