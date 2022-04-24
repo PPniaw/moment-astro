@@ -51,6 +51,7 @@ I will be coming for your love, okay?
 </LyricSection>
 
 <LyricSection>
+
 Take on me (take on me)
 
 Take me on (take on me)
