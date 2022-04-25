@@ -3,11 +3,10 @@ import BaseHead from '../components/BaseHead.astro';
 import SitePathHeader from '../components/SitePathHeader.astro';
 import Heading from '../components/Heading.astro';
 import Heard from '../components/Heard.astro';
-// import Lyric from '../components/Lyric.astro';
 import Footer from '../components/Footer.astro';
 
 const { content } = Astro.props;
-const { name, year, publishDate, heard, artist, heroImage, permalink, datePublished, dateModified, alt } = content;
+const { name, year, heard, artist, permalink, datePublished, dateModified } = content;
 
 const title = `聽到 ${name} | ${artist} 的電影、電視劇`;
 
@@ -25,9 +24,9 @@ const descriptionHeard = (heards) => {
 const description = `也有歌詞。${artist} 在 ${year} 年發行的作品，出現在${descriptionHeard(heard)}。`;
 ---
 
-<html lang="zh-Hant-TW">
+<html lang="zh-TW">
   <head>
-    <BaseHead {title} {description} {name} {permalink} {datePublished} {dateModified} {artist} />
+    <BaseHead {title} {description} {name} {artist} {permalink} {datePublished} {dateModified} />
   </head>
   <body data-body-style="song">
     <header class="songMeta">
