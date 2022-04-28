@@ -19,19 +19,19 @@ spotify: '1hlveB9M6ijHZRbzZ2teyh'
 ---
 <LyricSection>
 
-We're not gonna take it
+We&rsquo;re not gonna take it
 
-No! we ain't gonna take it
+No! we ain&rsquo;t gonna take it
 
-We're not gonna take it anymore
+We&rsquo;re not gonna take it anymore
 
 </LyricSection>
 
 <LyricSection>
 
-We've got the right to choose it
+We&rsquo;ve got the right to choose it
 
-There ain't no way we will lose it
+There ain&rsquo;t no way we will lose it
 
 This is our life
 
@@ -39,31 +39,31 @@ This is our song
 
 We will fight the powers that be just
 
-Don't pick our destiny cause
+Don&rsquo;t pick our destiny cause
 
-You don't know us
+You don&rsquo;t know us
 
-You don't belong
-
-</LyricSection>
-
-<LyricSection>
-
-We're not gonna take it
-
-No! we ain't gonna take it
-
-We're not gonna take it anymore
+You don&rsquo;t belong
 
 </LyricSection>
 
 <LyricSection>
 
-Oh! you're so condescending
+We&rsquo;re not gonna take it
+
+No! we ain&rsquo;t gonna take it
+
+We&rsquo;re not gonna take it anymore
+
+</LyricSection>
+
+<LyricSection>
+
+Oh! you are so condescending
 
 Your gall is never ending
 
-We don't want nothing, not a thing from you
+We don&rsquo;t want nothing, not a thing from you
 
 </LyricSection>
 
@@ -73,7 +73,7 @@ Your life is trite and jaded
 
 Boring and confiscated
 
-If that's your best, your best won't do
+If that&rsquo;s your best, your best won&rsquo;t do
 
 </LyricSection>
 
@@ -83,23 +83,23 @@ Wo-oh-oh
 
 Wo-oh-oh
 
-We're right! Yeah!
+We&rsquo;re right! Yeah!
 
-We're free! Yeah!
+We&rsquo;re free! Yeah!
 
-We'll fight! Yeah!
+We&rsquo;ll fight! Yeah!
 
-You'll see! Yeah!
+You&rsquo;ll see! Yeah!
 
 </LyricSection>
 
 <LyricSection>
 
-Oh, we're not gonna take it
+Oh, we&rsquo;re not gonna take it
 
-No, we ain't gonna take it
+No, we ain&rsquo;t gonna take it
 
-Oh, we're not gonna take it anymore...
+Oh, we&rsquo;re not gonna take it anymore...
 
 No way!
 
@@ -111,31 +111,31 @@ Wo-oh-oh
 
 Wo-oh-oh
 
-We're right! Yeah!
+We&rsquo;re right! Yeah!
 
-We're free! Yeah!
+We&rsquo;re free! Yeah!
 
-We'll fight! Yeah!
+We&rsquo;ll fight! Yeah!
 
-You'll see! Yeah!
+You&rsquo;ll see! Yeah!
 
 </LyricSection>
 
 <LyricSection>
 
-We're not gonna take it
+We&rsquo;re not gonna take it
 
-No! we ain't gonna take it
+No! we ain&rsquo;t gonna take it
 
-We're not gonna take it anymore
+We&rsquo;re not gonna take it anymore
 
-We're not gonna take it
+We&rsquo;re not gonna take it
 
 No!
 
-No! we ain't gonna take it
+No! we ain&rsquo;t gonna take it
 
-We're not gonna take it anymore
+We&rsquo;re not gonna take it anymore
 
 Just you try and make us!
 
@@ -143,26 +143,26 @@ Just you try and make us!
 
 <LyricSection>
 
-We're not gonna take it
+We&rsquo;re not gonna take it
 
 Come on!
 
-No! we ain't gonna take it
+No! we ain&rsquo;t gonna take it
 
-You're all worthless and weak!
+You&rsquo;re all worthless and weak!
 
-We're not gonna take it anymore
+We&rsquo;re not gonna take it anymore
 
 Now drop and give me twenty!
 
-We're not gonna take it
+We&rsquo;re not gonna take it
 
-A pledge pin?!
+A pledge pin?
 
-No! we ain't gonna take it
+No! we ain&rsquo;t gonna take it
 
 On your uniform!
 
-We're not gonna take it anymore
+We&rsquo;re not gonna take it anymore
 
 </LyricSection>

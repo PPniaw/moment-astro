@@ -11,7 +11,10 @@ let datePublished = '2020-09-21';
 let dateModified = '2022-04-25';
 
 let allSongs = await Astro.glob('./*/*.md');
-allSongs = allSongs.sort((a, b) => new Date(b.frontmatter.datePublished).valueOf() - new Date(a.frontmatter.datePublished).valueOf());
+
+allSongs = allSongs.sort((older, newer) =>
+  new Date(newer.frontmatter.datePublished).valueOf() - new Date(older.frontmatter.datePublished).valueOf()
+);
 ---
 
 <html lang="zh-TW">
