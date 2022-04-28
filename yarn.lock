@@ -105,6 +105,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/sitemap@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "@astrojs/sitemap@npm:0.1.0"
+  dependencies:
+    sitemap: ^7.1.1
+  checksum: 3719190bcc86782063f80d9bfc9688d79ee335331696e859ac1f0465a52f7319f451cd07e68967fb1fb8b3c6d6b8ff34e1a1c2439b1f81c4d6a1e5af2e1b161c
+  languageName: node
+  linkType: hard
+
 "@astrojs/svelte-language-integration@npm:^0.1.2":
   version: 0.1.2
   resolution: "@astrojs/svelte-language-integration@npm:0.1.2"
@@ -671,6 +680,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:*, @types/node@npm:^17.0.5":
+  version: 17.0.29
+  resolution: "@types/node@npm:17.0.29"
+  checksum: bb9d7bce9d6d3882efd9d63b773b548dce98df4bd57eff8ceaa316aa2f3346e36d3618764cc93da84bbff92005174a35eec3465cde91ee973ef1c351ffa40074
+  languageName: node
+  linkType: hard
+
 "@types/parse5@npm:^6.0.0, @types/parse5@npm:^6.0.1":
   version: 6.0.3
   resolution: "@types/parse5@npm:6.0.3"
@@ -682,6 +698,15 @@ __metadata:
   version: 1.20.1
   resolution: "@types/resolve@npm:1.20.1"
   checksum: d035d5aaadbd455027fa9457a4a263563d49647f088876aebd2b0388d4c35400b85c0382fdc2ec5253c35442abfc2d25431c989345b97fefe26a367811214343
+  languageName: node
+  linkType: hard
+
+"@types/sax@npm:^1.2.1":
+  version: 1.2.4
+  resolution: "@types/sax@npm:1.2.4"
+  dependencies:
+    "@types/node": "*"
+  checksum: 2aa50cbf1d1f0cf8541ef1787f94c7442e58e63900afd3b45c354e4140ed5efc5cf26fca8eb9df9970a74c7ea582293ae2083271bd046dedf4c3cc2689a40892
   languageName: node
   linkType: hard
 
@@ -825,6 +850,13 @@ __metadata:
     delegates: ^1.0.0
     readable-stream: ^3.6.0
   checksum: 348edfdd931b0b50868b55402c01c3f64df1d4c229ab6f063539a5025fd6c5f5bb8a0cab409bbed8d75d34762d22aa91b7c20b4204eb8177063158d9ba792981
+  languageName: node
+  linkType: hard
+
+"arg@npm:^5.0.0":
+  version: 5.0.1
+  resolution: "arg@npm:5.0.1"
+  checksum: 9aefbcb1204f8dbd541a045bfe99b6515b4dc697c2f704ef2bb5e9fe5464575d97571e91e673a6f23ad72dd1cc24d7d8cf2d1d828e72c08e4d4f6f9237adc761
   languageName: node
   linkType: hard
 
@@ -4142,6 +4174,7 @@ __metadata:
   dependencies:
     "@astrojs/preact": ^0.0.2
     "@astrojs/renderer-preact": ^0.4.0
+    "@astrojs/sitemap": ^0.1.0
     astro: ^0.26.0
     autoprefixer: ^10.4.2
     sass: ^1.49.7
@@ -4976,6 +5009,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sax@npm:^1.2.4":
+  version: 1.2.4
+  resolution: "sax@npm:1.2.4"
+  checksum: d3df7d32b897a2c2f28e941f732c71ba90e27c24f62ee918bd4d9a8cfb3553f2f81e5493c7f0be94a11c1911b643a9108f231dd6f60df3fa9586b5d2e3e9e1fe
+  languageName: node
+  linkType: hard
+
 "section-matter@npm:^1.0.0":
   version: 1.0.0
   resolution: "section-matter@npm:1.0.0"
@@ -5089,6 +5129,20 @@ __metadata:
   version: 1.0.5
   resolution: "sisteransi@npm:1.0.5"
   checksum: aba6438f46d2bfcef94cf112c835ab395172c75f67453fe05c340c770d3c402363018ae1ab4172a1026a90c47eaccf3af7b6ff6fa749a680c2929bd7fa2b37a4
+  languageName: node
+  linkType: hard
+
+"sitemap@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "sitemap@npm:7.1.1"
+  dependencies:
+    "@types/node": ^17.0.5
+    "@types/sax": ^1.2.1
+    arg: ^5.0.0
+    sax: ^1.2.4
+  bin:
+    sitemap: dist/cli.js
+  checksum: 87a6d21b0d4a33b8c611d3bb8543d02b813c0ebfce014213ef31849b5c1439005644f19ad1593ec89815f6101355f468c9a02c251d09aa03f6fddd17e23c4be4
   languageName: node
   linkType: hard
 
